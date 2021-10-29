@@ -165,10 +165,7 @@ public class CalculateToken {
         }
         return s;
     }
-
 }
-
-
 
 //Tok对象类
 class Tok
