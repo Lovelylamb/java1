@@ -1,3 +1,6 @@
+import java.lang.reflect.Field;
+import java.lang.reflect.ParameterizedType;
+
 /**
  * @author:chenshuai
  * */
@@ -20,5 +23,17 @@ public class Person {
     }
 
 
+}
+
+class Test111{
+    public static void main(String[] args) {
+        Field[] declaredFields = Person.class.getDeclaredFields();
+        for (Field declaredField : declaredFields) {
+            System.out.println(declaredField);
+            if(declaredField instanceof ParameterizedType){
+
+            }
+        }
+    }
 
 }

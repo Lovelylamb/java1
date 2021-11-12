@@ -24,7 +24,6 @@ public class AnnotationTest1  extends  Object{
     public void test02()
     {
         List list=new ArrayList();
-
     }
 
     public static void main(String[] args) {

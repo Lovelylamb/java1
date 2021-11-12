@@ -19,6 +19,7 @@ public class YuanAnnotation {
 //Retention表示我们的注解在什么地方还有效，一共三个 源码 RESOURCE < class文件 CLASS <运行时 RUNTIME
 @Retention(value = RetentionPolicy.RUNTIME)
 
+
 //Documented表示是否将我们的注解生成在javadoc中
 @Documented
 

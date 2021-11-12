@@ -17,6 +17,4 @@ class A{
         System.out.println("A类的静态代码块初始化");
         m=300;
     }
-
-
 }

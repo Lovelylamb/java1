@@ -2,6 +2,7 @@ package reflection;
 
 public class ReflectionTest06 {
     public static void main(String[] args) throws ClassNotFoundException {
+
         //获取系统类的加载器
         ClassLoader systemClassLoader = ClassLoader.getSystemClassLoader();
         System.out.println(systemClassLoader);  //AppClassLoader

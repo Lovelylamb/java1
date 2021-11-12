@@ -10,16 +10,16 @@ public class ReflectionTest07 {
         Class c1 = Class.forName("reflection.User");
         //获得类的名字
         System.out.println(c1.getName());            //reflection.User   获得包名+类名
-        System.out.println(c1.getSimpleName());    //User           获得类名
+        System.out.println(c1.getSimpleName());      //User              获得类名
 
         System.out.println("============================");
         //获取类的属性
-        Field[] fields = c1.getFields();  //只能找到pubLic属性
+        Field[] fields = c1.getFields();  //只能找到pubLic属性(包括父类中的字段)
         for (Field field : fields) {
             System.out.println(field);
         }
         System.out.println("============================");
-        Field[] declaredFields = c1.getDeclaredFields();  //能找到所有的属性
+        Field[] declaredFields = c1.getDeclaredFields();  //能找到所有的属性，获得某个类的所有声明的字段，即包括public、private和proteced，但是不包括父类的申明字段。
         for (Field declaredField : declaredFields) {
             System.out.println(declaredField);
         }
